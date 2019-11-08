@@ -1,0 +1,18 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+<!--This block is where you can brand the html content of the admin area-->
+{% block branding %}
+<h1 id="head">
+    <img src="{% static 'assets/img/lens.jpg' %}" class="brand-img"alt="Lens Admin"width="40px"height="50px">
+    Lens Admin
+</h1>
+
+{% endblock %}
+
+<!--FOR CSS STYLE OF -->
+{% block extrastyle %}
+<link rel="stylesheet"href="{% static 'assets/css/admin.css' %}">
+
+
+{% endblock %}

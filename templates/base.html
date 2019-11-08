@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'assets/css/all.css' %}">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <!--animate-->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+
+    <title>Terry Real Estate {% block title %} {% endblock %}</title>
+</head>
+
+<body>
+   
+    <!--Top bar-->
+    {% include 'partials/_topbar.html' %}
+
+    <!--navbar-->
+    {% include 'partials/_navbar.html' %}
+
+    <!--main content-->
+    {% block content %} 
+    <!--This can display pages's content -->
+    
+    {% endblock %}
+    
+   
+
+    <!--footer-->
+    {% include 'partials/_footer.html' %}
+   
+
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %} "></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %} "></script>
+    <script src="{% static 'assets/js/main.js' %} "></script>
+    <!--wow.js-->
+    <script src="{% static 'assets/js/wow/wow.min.js' %}"></script>
+
+   
+
+    
+
+
+
+</body>
+
+</html>
